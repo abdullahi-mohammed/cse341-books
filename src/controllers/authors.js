@@ -12,7 +12,7 @@ const hasRequiredAuthorFields = (body) => {
         && typeof body?.lastName === 'string' && body.lastName.trim() !== '';
 };
 
-const getAllAuthors = async (req, res) => {
+const getAllAuthors = async (req, res, next) => {
     try {
         const authors = await getAllAuthorsFromDb();
         return res.status(200).json(authors);

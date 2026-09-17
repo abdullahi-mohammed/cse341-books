@@ -1,17 +1,17 @@
 import express from 'express';
 import {
-	getBooksHandler,
-	getBookByIdHandler,
-	createBookHandler,
-	updateBookHandler,
-	deleteBookHandler,
+    getBooksHandler,
+    getBookByIdHandler,
+    createBookHandler,
+    updateBookHandler,
+    deleteBookHandler,
 } from './controllers/books.js';
 import {
-	getAllAuthors,
-	getAuthorById,
-	createAuthor,
-	updateAuthor,
-	deleteAuthor,
+    getAllAuthors,
+    getAuthorById,
+    createAuthor,
+    updateAuthor,
+    deleteAuthor,
 } from './controllers/authors.js';
 
 const router = express.Router();
